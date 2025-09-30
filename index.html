@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Acquihiring in India — Free Course</title>
+  <meta name="description" content="A comprehensive free course on Acquihiring in India. Fundamentals, Indian context, law, compliance, deal mechanics, valuation, recruiter playbooks, founder lens, integration, case studies, templates, and a capstone." />
+  <link rel="canonical" href="https://vishal-dembla.github.io/acquihiring-course/" />
+  <meta name="robots" content="index, follow" />
+
+  <style>
+    :root{
+      --bg:#ffffff; --ink:#111827; --muted:#4b5563; --line:#e5e7eb; --link:#1d4ed8;
+      --chip:#f3f4f6; --card:#fafafa; --accent:#111827;
+      --max:1200px; --toc:300px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--bg)}
+    a{color:var(--link); text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{position:sticky; top:0; z-index:50; background:#fff; border-bottom:1px solid var(--line)}
+    .wrap{max-width:var(--max); margin:0 auto; padding:16px 20px}
+    .subtle{color:var(--muted)}
+    .grid{display:grid; grid-template-columns: var(--toc) 1fr; gap:24px}
+    @media (max-width: 1024px){ .grid{grid-template-columns:1fr} aside{position:static} }
+    aside{position:sticky; top:72px; align-self:start; height:calc(100vh - 88px); overflow:auto; padding-bottom:24px}
+    .toc{border:1px solid var(--line); border-radius:12px; background:#fff; padding:12px}
+    .toc h3{margin:4px 8px 8px; font-size:15px}
+    .toc a{display:block; padding:8px 10px; border-radius:8px; color:#111827; font-size:14px}
+    .toc a.active{background:#11182710; font-weight:700}
+    main{min-width:0}
+    h1{font-size:36px; line-height:1.2; margin:6px 0 6px}
+    h2{font-size:28px; margin:40px 0 8px}
+    h3{font-size:20px; margin:22px 0 6px}
+    p{margin:12px 0}
+    .lead{font-size:18px; color:var(--muted)}
+    .block{border:1px solid var(--line); border-radius:12px; background:#fff; padding:14px; margin:14px 0}
+    .def{border-left:3px solid var(--accent); padding-left:10px}
+    .table{width:100%; border-collapse:collapse; margin:10px 0}
+    .table th,.table td{border:1px solid var(--line); padding:8px; text-align:left}
+    .quiz{border:1px solid var(--line); border-radius:12px; background:#fff; padding:14px; margin:16px 0}
+    .quiz button{padding:8px 12px; border:1px solid var(--line); border-radius:8px; background:#fff; cursor:pointer}
+    .callout{border:1px dashed var(--line); background:var(--card); padding:12px; border-radius:12px}
+    .rlens{border-top:2px solid var(--line); margin-top:18px; padding-top:8px; background:#fff}
+    footer{border-top:1px solid var(--line); margin-top:40px; background:#fff}
+    .footer-grid{display:grid; grid-template-columns:1fr auto; gap:12px; align-items:center}
+    .footer-links a{margin-right:16px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Acquihiring in India — Free Course</h1>
+      <p class="lead">By <a href="https://www.linkedin.com/in/vishaldembla1/">Vishal Dembla</a> · Recruiter, Builder, Writer</p>
+    </div>
+  </header>
+
+  <div class="wrap grid">
+    <aside>
+      <nav class="toc" id="toc">
+        <h3>Chapters</h3>
+        <div id="tocLinks"></div>
+      </nav>
+    </aside>
+
+    <main id="content">
+
+      <!-- Chapter 1 -->
+      <section id="chapter1">
+        [Your full Chapter 1 content goes here — already pasted earlier in this thread]
+      </section>
+
+      <!-- Chapter 2 -->
+      <section id="chapter2">
+        [Full Chapter 2 content goes here — formatted earlier]
+      </section>
+
+      <!-- Chapter 3 -->
+      <section id="chapter3">
+        [Full Chapter 3 content goes here — formatted earlier]
+      </section>
+
+      <!-- Placeholders 4–10 -->
+      <section id="chapter4"><h1>Chapter 4 — Valuation</h1><p>Content coming soon...</p></section>
+      <section id="chapter5"><h1>Chapter 5 — Recruiter Playbook</h1><p>Content coming soon...</p></section>
+      <section id="chapter6"><h1>Chapter 6 — Founder & Operator Lens</h1><p>Content coming soon...</p></section>
+      <section id="chapter7"><h1>Chapter 7 — Integration</h1><p>Content coming soon...</p></section>
+      <section id="chapter8"><h1>Chapter 8 — Case Studies</h1><p>Content coming soon...</p></section>
+      <section id="chapter9"><h1>Chapter 9 — Templates & Checklists</h1><p>Content coming soon...</p></section>
+      <section id="chapter10"><h1>Chapter 10 — Capstone</h1><p>Content coming soon...</p></section>
+
+    </main>
+  </div>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div class="footer-links">
+        <a href="./glossary/">Glossary</a>
+        <a href="./faqs/">FAQs</a>
+        <a href="./other/">Other</a>
+      </div>
+      <div class="subtle">© 2025 Vishal Dembla · Acquihiring in India — Free Course</div>
+    </div>
+  </footer>
+
+  <script>
+    // Build TOC
+    const sections = Array.from(document.querySelectorAll('main section[id]'));
+    const tocLinksEl = document.getElementById('tocLinks');
+    sections.forEach(sec => {
+      const h1 = sec.querySelector('h1');
+      if(h1){
+        const a = document.createElement('a');
+        a.href = '#' + sec.id;
+        a.textContent = h1.textContent;
+        tocLinksEl.appendChild(a);
+      }
+    });
+
+    // Scroll spy
+    const links = tocLinksEl.querySelectorAll('a');
+    const map = new Map([...links].map(a=>[a.getAttribute('href').slice(1),a]));
+    const obs = new IntersectionObserver(entries=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){
+          links.forEach(l=>l.classList.remove('active'));
+          map.get(e.target.id)?.classList.add('active');
+        }
+      });
+    },{rootMargin:"-30% 0px -60% 0px",threshold:0.01});
+    sections.forEach(s=>obs.observe(s));
+  </script>
+</body>
+</html>

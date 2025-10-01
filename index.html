@@ -47,25 +47,33 @@
   .subtle{color:var(--muted)}
   .grid{display:grid; grid-template-columns: var(--toc) 1fr; gap:24px}
 
-  /* Mobile layout: single column and non‑sticky TOC */
-  @media (max-width: 1024px){
-    .grid{grid-template-columns:1fr;}
-    aside{
-      position:static;
-      height:auto;
-      overflow:visible;
-      margin-bottom:24px; /* spacing below the TOC */
+  /* Base sidebar styles (no height/overflow constraints) */
+  aside {
+    position: sticky;
+    top: 72px;
+    align-self: start;
+    padding-bottom: 24px;
+  }
+
+  /* Large screens: make the TOC scroll within the viewport */
+  @media (min-width: 1025px) {
+    aside {
+      height: calc(100vh - 88px);
+      overflow: auto;
     }
   }
 
-  /* Sticky sidebar on larger screens */
-  aside{
-    position:sticky;
-    top:72px;
-    align-self:start;
-    height:calc(100vh - 88px);
-    overflow:auto;
-    padding-bottom:24px;
+  /* Mobile layout: single column and non‑sticky TOC */
+  @media (max-width: 1024px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+    aside {
+      position: static;
+      height: auto;
+      overflow: visible;
+      margin-bottom: 24px; /* optional spacing below the TOC */
+    }
   }
 
   .toc{border:1px solid var(--line); border-radius:12px; background:#fff; padding:12px}
@@ -90,6 +98,7 @@
   .footer-grid{display:grid; grid-template-columns:1fr auto; gap:12px; align-items:center}
   .footer-links a{margin-right:16px}
 </style>
+
 
 </head>
 <body>

@@ -1,0 +1,13 @@
+# This line tells all web crawlers (*) that they are allowed to crawl your entire site (/).
+User-agent: *
+Allow: /
+
+# Specifically allow the sitemap.xml file, though it's typically allowed by "Allow: /"
+Allow: /sitemap.xml
+
+# Explicitly allow the primary course content path for clarity on GitHub Pages.
+Allow: /acquihiring-in-india-free-course/
+
+# Specify the full URL to your sitemap.xml file.
+# This helps search engines easily discover all the pages on your site.
+Sitemap: https://vishal-dembla.github.io/acquihiring-in-india-free-course/sitemap.xml

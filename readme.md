@@ -1,4 +1,4 @@
-# Acquihiring in India — Free Course
+# Acquihiring in India | Free Course
 
 **🚀 Access the Live Course Website Here:** [https://vishal-dembla.github.io/acquihiring-in-india-free-course/](https://vishal-dembla.github.io/acquihiring-in-india-free-course/)
 
@@ -6,7 +6,7 @@
 
 ## About This Course
 
-This repository hosts the code and content for "Acquihiring in India — Free Course," a comprehensive educational resource designed for professionals, founders, recruiters, and investors interested in talent-driven acquisitions within the Indian startup ecosystem.
+This repository hosts the code and content for "Acquihiring in India - Free Course," a comprehensive educational resource designed for professionals, founders, recruiters, and investors interested in talent-driven acquisitions within the Indian startup ecosystem.
 
 The course covers:
 *   **Fundamentals of Acquihiring:** What it is, why it's different from traditional hiring and M&A.
